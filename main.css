@@ -1,0 +1,106 @@
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("/fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 4.5rem;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero {
+    margin: 80px auto; 
+    padding: 0 20px;
+}
+
+.hero__logo {
+    width: 150px;
+    height: 100%;
+    margin-bottom: 70px;
+    object-fit: contain;
+}
+
+.benefits {
+    text-align: center;
+}
+
+.benefits__image {
+    max-height: 1200px;
+    object-fit: fill;
+    margin-top: 160px;
+}
+
+
+.functions__heading {
+    margin-top: 180px;
+}
+
+.functions__image {
+    margin-bottom: 140px;
+}
+
+.characteristics__list {
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    list-style: none;
+}
+
+.characteristics__list > .list__item {
+    position: relative;
+    height: fit-content;
+    width: 40%;
+    padding: 40px 100px;
+    white-space: pre-line;
+}
+.characteristics__list > .list__item:not(:nth-last-child(-n+2))::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    width: 25%;
+    height: 1px;
+    background-color: #000;
+}
+
+@media (max-width: 1199.98px) {   }
+
+@media (max-width: 991.98px) {   }
+@media (max-width: 767.98px) {   }
+
+@media (max-width: 575.98px) {  
+    html {
+        font-size: 8px;
+    }
+
+    .characteristics__list > .list__item {
+        padding: 15px;
+    }
+
+    .characteristics__list > .list__item:not(:nth-last-child(-n+2))::after {
+        left: 15px;
+    }
+}
+ 
